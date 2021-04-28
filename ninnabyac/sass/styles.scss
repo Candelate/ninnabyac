@@ -1,0 +1,168 @@
+header{
+	.header__container{
+		display: flex;
+		flex-flow: row;
+		justify-content:space-between;
+		align-items: center;
+		background:white;
+		.header__menu{
+			display:flex;
+			flex-flow:row;
+			width: 65%;
+			justify-content:space-between;
+			list-style:none;
+			background:white;
+			a{
+				color:black;
+				&:hover{
+	   				 color: pink;
+    				text-decoration: underline;
+
+    		}
+
+			}
+		}
+	}
+
+}
+a{
+	text-decoration:none;
+	font-family: 'Shippori Mincho B1', serif;
+	
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .carousel-inner{
+    	width:auto;
+    }
+    .carousel-item{ 
+		img{
+			max-width:100vw;
+			max-height: 100vh;
+			width: 400px;
+			height: 600px;
+		} 
+	}
+	.carousel-control-prev {
+    	left: 30%;
+	}
+	.carousel-control-next {
+    	right: 30%;
+}
+}
+.grid{
+	display: grid;
+	grid-template-rows: 35px;
+	background-color:#f48fb1;
+	justify-content: center;
+}	
+.botonSesion{
+	position: absolute;
+	bottom:50%;
+	font-size: 30px;
+	color:#e5989b;
+	border:1px;
+	border-color:red;
+}	
+.contenedorWsp{
+ 	position: fixed;
+ 	top:50%;
+ 	right: 0;
+ 	font-size: 40px;
+ }
+.fab fa-whatsapp{
+	font-size: 100px
+}
+.contenedorIconos{
+	position:absolute;
+	right:0;
+	display: flex;
+ 	flex-flow: row;
+ 	justify-content: flex-end;
+ 	a{
+ 		color:black;
+ 	}	
+ 	.iconoInsta{
+ 		font-size: 50px;
+ 		height: auto;
+ 	}
+}
+.header__title{
+	color:black;
+	font-family: 'Shippori Mincho B1', serif;	
+}
+.contenedorImagenes__botas{
+	width: 100%;
+	display:flex;
+	flex-flow:row;
+	flex-wrap: wrap;
+}
+.img__botas{
+	width: 280px;
+	height: auto;
+	margin: 16px;
+}
+.container__botas{
+	margin:10px;
+	display:flex;
+	flex-flow:row;
+	flex-wrap: wrap;
+}	
+.textoImagen{
+	text-align: center;
+}
+.precio{
+	text-align:center;
+	font-size: 18px;
+}
+.precioTachado{
+	text-align:center;
+	text-decoration: line-through;
+	font-size: 18px;
+}
+.descuento{
+	text-align: center;
+	font-size: 16px;
+}
+.contenedorIniciarSesion {
+	a{
+		text-decoration:none;
+		font-family: 'Shippori Mincho B1', serif;
+		color:black;
+				&:hover{
+		   			 color: pink;
+	    			text-decoration: underline
+		}	
+	}		
+}
+.footer{
+	position:relative;
+	height: auto;
+	display: flex;
+    grid-area: foot;
+    background-color: #ffc1e3;
+    grid-template-rows: 200px;
+    a{
+		text-decoration:none;
+		font-family: 'Shippori Mincho B1', serif;
+		color:black;
+				&:hover{
+		   			 color: black;
+	    			text-decoration: underline
+
+		}	
+	}		
+
+}
+.tarjetas{
+	width:56px;
+}
+.preguntas{
+	font-weight:bold;
+	margin: 10px;
+}
+.respuestas{
+	margin: 10px;
+}
