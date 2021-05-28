@@ -11,6 +11,7 @@ padding:0;
 .header__title{
 	color:black;
 	font-family: 'Shippori Mincho B1', serif;
+	text-align: center;
 	
 }
 .header__menu{
@@ -24,6 +25,9 @@ padding:0;
 header div ul li a{
 	color:black;
 } 
+.tituloPrincipal{
+	text-align: center;
+}
  .contenedorInicio{
  	display: flex;
  	flex-flow:row;
@@ -63,7 +67,7 @@ header div ul li a{
  .titulo{
 	color:black;
 	border: black
-}
+}	
 .contenedorImagenes__botas{
 	width: 100%;
 	display:flex;

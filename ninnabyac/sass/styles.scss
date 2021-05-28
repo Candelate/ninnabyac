@@ -34,15 +34,18 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 120px;
+
     .carousel-inner{
     	width:auto;
     }
+    .carousel-indicators{
+    display:none;
+    }
     .carousel-item{ 
 		img{
-			max-width:100vw;
 			max-height: 100vh;
-			width: 400px;
-			height: 600px;
+			
 		} 
 	}
 	.carousel-control-prev {
@@ -65,28 +68,25 @@ a{
 	color:#e5989b;
 	border:1px;
 	border-color:red;
-}	
-.contenedorWsp{
- 	position: fixed;
- 	top:50%;
- 	right: 0;
- 	font-size: 40px;
- }
-.fab fa-whatsapp{
-	font-size: 100px
 }
 .contenedorIconos{
 	position:absolute;
 	right:0;
 	display: flex;
  	flex-flow: row;
- 	justify-content: flex-end;
+ 	justify-content: space-between;
  	a{
  		color:black;
  	}	
  	.iconoInsta{
  		font-size: 50px;
  		height: auto;
+ 		margin-right: 10px;
+ 	}
+ 	.fa-whatsapp{
+	 	font-size: 50px;
+ 		height: auto;
+ 		color: black;
  	}
 }
 .header__title{
@@ -112,6 +112,7 @@ a{
 }	
 .textoImagen{
 	text-align: center;
+	 font-family: 'Shippori Mincho B1', serif;
 }
 .precio{
 	text-align:center;
@@ -138,9 +139,11 @@ a{
 	}		
 }
 .footer{
-	position:relative;
-	height: auto;
-	display: flex;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
     grid-area: foot;
     background-color: #ffc1e3;
     grid-template-rows: 200px;
@@ -165,4 +168,26 @@ a{
 }
 .respuestas{
 	margin: 10px;
+}
+.titulo{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shippori Mincho B1', serif;
+}
+.formContainer{
+	display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center
+}
+body{
+	position: relative;
+	min-height: 100vh;
+}
+.wrapper_botas{
+	padding-bottom: 120px
+}
+.preguntasFrecuentes{
+	padding-bottom:10px;
 }
